@@ -63,7 +63,7 @@ function uptime() {
 				$("#servers").append(
 					"<tr id=\"r" + i + "\" data-toggle=\"collapse\" data-target=\"#rt" + i + "\" class=\"accordion-toggle " + hack + "\">" +
 						"<td id=\"online_status\"><div class=\"progress\"><div style=\"width: 100%;\" class=\"progress-bar progress-bar-warning\"><small>加载中</small></div></div></td>" +
-						"<td id=\"month_traffic\"><div class=\"progress\"><div style=\"width: 100%;\" class=\"progress-bar progress-bar-warning\"><small>加载中</small></div></div></td>" +
+						//"<td id=\"month_traffic\"><div class=\"progress\"><div style=\"width: 100%;\" class=\"progress-bar progress-bar-warning\"><small>加载中</small></div></div></td>" +
 						"<td id=\"name\">加载中</td>" +
 						"<td id=\"type\">加载中</td>" +
 						"<td id=\"location\">加载中</td>" +
@@ -124,8 +124,8 @@ function uptime() {
 					TableRow.children["load"].innerHTML = "–";
 					TableRow.children["network"].innerHTML = "–";
 					TableRow.children["traffic"].innerHTML = "–";
-					TableRow.children["month_traffic"].children[0].children[0].className = "progress-bar progress-bar-warning";
-					TableRow.children["month_traffic"].children[0].children[0].innerHTML = "<small>关闭</small>";
+					//TableRow.children["month_traffic"].children[0].children[0].className = "progress-bar progress-bar-warning";
+					//TableRow.children["month_traffic"].children[0].children[0].innerHTML = "<small>关闭</small>";
 					TableRow.children["cpu"].children[0].children[0].className = "progress-bar progress-bar-danger";
 					TableRow.children["cpu"].children[0].children[0].style.width = "100%";
 					TableRow.children["cpu"].children[0].children[0].innerHTML = "<small>关闭</small>";
@@ -163,8 +163,8 @@ function uptime() {
 					monthtraffic += (trafficdiff_out/1024/1024/1024).toFixed(2) + "G";
 				else
 					monthtraffic += (trafficdiff_out/1024/1024/1024/1024).toFixed(2) + "T";
-				TableRow.children["month_traffic"].children[0].children[0].className = "progress-bar progress-bar-success";
-				TableRow.children["month_traffic"].children[0].children[0].innerHTML = "<small>"+monthtraffic+"</small>";
+				//TableRow.children["month_traffic"].children[0].children[0].className = "progress-bar progress-bar-success";
+				//TableRow.children["month_traffic"].children[0].children[0].innerHTML = "<small>"+monthtraffic+"</small>";
 
 				// Uptime
 				TableRow.children["uptime"].innerHTML = result.servers[i].uptime;
