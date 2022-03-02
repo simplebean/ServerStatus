@@ -126,6 +126,19 @@ sudo pip3 install psutil
 `extra scene (run web/ssview.py)`
 ![Shell View](http://dl.cpp.la/Archive/serverstatus-shell.png)
 
+另外，vnstat 默认以 比特单位 显示， 通过运行以下命令修改/etc/vnstat.conf中的 UnitMode，RateUnit 配置项，以实现 字节单位 显示：
+```
+# how units are prefixed when traffic is shown
+# 0 = IEC standard prefixes (KiB/MiB/GiB...)
+# 1 = old style binary prefixes (KB/MB/GB...)
+# 2 = SI decimal prefixes (kB/MB/GB...)
+sed -i "s/UnitMode.*/UnitMode 1/g" /etc/vnstat.conf
+
+# used rate unit (0 = bytes, 1 = bits)
+sed -i "s/RateUnit.*/RateUnit 0/g" /etc/vnstat.conf
+```
+
+
 
 # 相关开源项目： 
 
