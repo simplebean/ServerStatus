@@ -13,15 +13,14 @@ USER = "s01"
 PORT = 35601
 PASSWORD = "USER_DEFAULT_PASSWORD"
 INTERVAL = 1
-PROBEPORT = 80
 CU_PROBEPORT = 8800
 CT_PROBEPORT = 80
 CM_PROBEPORT = 80
 PROBE_PROTOCOL_PREFER = "ipv4"  # ipv4, ipv6
 PING_PACKET_HISTORY_LEN = 100
 CU = "cs1.bbn.com.cn"
-CT = "ct.tz.cloudcpp.com"
-CM = "cm.tz.cloudcpp.com"
+CT = "bj.189.cn"
+CM = "bj.10086.cn"
 
 import socket
 import time
