@@ -20,7 +20,7 @@ PROBE_PROTOCOL_PREFER = "ipv4"  # ipv4, ipv6
 PING_PACKET_HISTORY_LEN = 100
 CU = "cs1.bbn.com.cn"
 CT = "app.ctyun.cn"
-CM = "www.bj.10086.cn"
+CM = "ecloud.10086.cn"
 
 import socket
 import time
