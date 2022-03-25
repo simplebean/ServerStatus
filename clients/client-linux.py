@@ -14,9 +14,12 @@ PORT = 35601
 PASSWORD = "USER_DEFAULT_PASSWORD"
 INTERVAL = 1
 PROBEPORT = 80
+CU_PROBEPORT = 8800
+CT_PROBEPORT = 80
+CM_PROBEPORT = 80
 PROBE_PROTOCOL_PREFER = "ipv4"  # ipv4, ipv6
 PING_PACKET_HISTORY_LEN = 100
-CU = "cu.tz.cloudcpp.com"
+CU = "cs1.bbn.com.cn"
 CT = "ct.tz.cloudcpp.com"
 CM = "cm.tz.cloudcpp.com"
 
@@ -229,7 +232,7 @@ def get_realtime_date():
         kwargs={
             'host': CU,
             'mark': '10010',
-            'port': PROBEPORT
+            'port': CU_PROBEPORT
         }
     )
     t2 = threading.Thread(
@@ -237,7 +240,7 @@ def get_realtime_date():
         kwargs={
             'host': CT,
             'mark': '189',
-            'port': PROBEPORT
+            'port': CT_PROBEPORT
         }
     )
     t3 = threading.Thread(
@@ -245,7 +248,7 @@ def get_realtime_date():
         kwargs={
             'host': CM,
             'mark': '10086',
-            'port': PROBEPORT
+            'port': CM_PROBEPORT
         }
     )
     t4 = threading.Thread(
