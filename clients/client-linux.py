@@ -18,7 +18,7 @@ CT_PROBEPORT = 80
 CM_PROBEPORT = 80
 PROBE_PROTOCOL_PREFER = "ipv4"  # ipv4, ipv6
 PING_PACKET_HISTORY_LEN = 100
-CU = "cs1.bbn.com.cn"
+CU = "iservice.10010.com"
 CT = "app.ctyun.cn"
 CM = "ecloud.10086.cn"
 
