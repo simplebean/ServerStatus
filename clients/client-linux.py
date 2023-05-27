@@ -13,13 +13,12 @@ USER = "s01"
 PORT = 35601
 PASSWORD = "USER_DEFAULT_PASSWORD"
 INTERVAL = 1
-CU_PROBEPORT = 8800
+CU_PROBEPORT = 80
 CT_PROBEPORT = 80
 CM_PROBEPORT = 80
 PROBE_PROTOCOL_PREFER = "ipv4"  # ipv4, ipv6
 PING_PACKET_HISTORY_LEN = 100
-CU = "www.chinaunicom-a.com"
-#CU = "cucc.wocloud.cn"
+CU = "cesu.sdinfo.net"
 CT = "app.ctyun.cn"
 CM = "ecloud.10086.cn"
 
